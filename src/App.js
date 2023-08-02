@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import PokeCard from "./PokeCard";
+import PokeCard from "./PokeCard1";
+import PokeTeam from './PokeTeam'
 import tachyons from 'tachyons';
+import listedPokemon from "./listedPokemon"
 
 class App extends Component {
   constructor(){
@@ -10,17 +12,10 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    fetch('https://pokeapi.co/api/v2/pokemon/73/')
-      .then(response => response.json())
-      .then(response => this.setState({ pokemon:response }))
-  }
-
   render() {
-    const { pokemon } = this.state
     return(
       <div className="App">
-        <PokeCard pokemon={ pokemon }/>
+          <PokeTeam />
       </div>
     )
   }

@@ -16,7 +16,7 @@ for (var i = 0; i < 6; i++) {
     team.push(member)
 };
 
-const PokeTeam = () => {
+const PokeEnemyTeam = () => {
     return(
         <div>
             {team}
@@ -24,4 +24,4 @@ const PokeTeam = () => {
     )
 }
 
-export default PokeTeam
+export default PokeEnemyTeam

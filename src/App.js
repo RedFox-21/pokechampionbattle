@@ -1,24 +1,16 @@
-import React, { Component } from "react";
-import PokeCard from "./PokeCard1";
+import './App.css';
 import PokeTeam from './PokeTeam'
+import PokeEnemyTeam from './PokeEnemyTeam';
 import tachyons from 'tachyons';
-import listedPokemon from "./listedPokemon"
 
-class App extends Component {
-  constructor(){
-    super()
-    this.state ={
-      pokemon: {}
-    }
-  }
-
-  render() {
-    return(
-      <div className="App">
-          <PokeTeam />
-      </div>
-    )
-  }
-} 
+function App() {
+  return (
+    <div className="App">
+      <PokeTeam />
+      <button>Randomizer</button>
+      <PokeEnemyTeam />
+    </div>
+  );
+}
 
 export default App;
